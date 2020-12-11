@@ -1,0 +1,5 @@
+<map id="GoalChecker::updatePoseIfConsiderable" name="GoalChecker::updatePoseIfConsiderable">
+<area shape="rect" id="node2" href="$classGoalChecker.html#af10ae594c71c0c9a38d236dac172cf74" title="GoalChecker::isGoalConsiderable" alt="" coords="236,5,455,32"/>
+<area shape="rect" id="node4" href="$classGoalChecker.html#aacaad924c7c5f9900c7d5a521d0cc945" title="GoalChecker::setCurrentPosition" alt="" coords="238,56,453,83"/>
+<area shape="rect" id="node3" href="$classConverter.html#aa111c599f25b04113115d6ba1dc00786" title="Converter::convertToTfPair" alt="" coords="503,5,683,32"/>
+</map>
