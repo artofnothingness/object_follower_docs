@@ -1,4 +1,4 @@
 <map id="GoalGenerator" name="GoalGenerator">
-<area shape="rect" id="node2" href="$classGoalGeneratorBaselink2D.html" title="GoalGeneratorBaselink2D" alt="" coords="5,80,179,107"/>
-<area shape="rect" id="node3" href="$classGoalGeneratorNearest2D.html" title="GoalGeneratorNearest2D" alt="" coords="203,80,373,107"/>
+<area shape="rect" id="node2" href="$classGoalGeneratorBaselink2D.html" title="Implementation for 2D case, in which goal is selected opposite the object X coordinate for x &#45; forwar..." alt="" coords="5,80,179,107"/>
+<area shape="rect" id="node3" href="$classGoalGeneratorNearest2D.html" title="Implementation for 2D case, in which goal is selected as nearest point between base and object..." alt="" coords="203,80,373,107"/>
 </map>

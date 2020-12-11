@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGoalGenerator.html" title="GoalGenerator" alt="" coords="5,31,112,57"/>
-<area shape="rect" id="node2" href="$classGoalGeneratorBaselink2D.html" title="GoalGeneratorBaselink2D" alt="" coords="160,5,333,32"/>
-<area shape="rect" id="node3" href="$classGoalGeneratorNearest2D.html" title="GoalGeneratorNearest2D" alt="" coords="162,56,331,83"/>
+<area shape="rect" id="node1" href="$classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. " alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$classGoalGeneratorBaselink2D.html" title="Implementation for 2D case, in which goal is selected opposite the object X coordinate for x &#45; forwar..." alt="" coords="160,5,333,32"/>
+<area shape="rect" id="node3" href="$classGoalGeneratorNearest2D.html" title="Implementation for 2D case, in which goal is selected as nearest point between base and object..." alt="" coords="162,56,331,83"/>
 </map>
