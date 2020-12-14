@@ -27,7 +27,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents way for publishing goal. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them and following to object.  
+<p>Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents publishing goal algorithm. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them in following algorithm.  
  <a href="classObjectFollowerCore.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>&gt;</code></p>
@@ -47,6 +47,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a53fde9e350cb1c3ca1b67c7a2f2cf3e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#a53fde9e350cb1c3ca1b67c7a2f2cf3e2">dynamicConfigCb</a> (object_follower::FollowerParamsConfig &amp;config, uint32_t level)</td></tr>
+<tr class="separator:a53fde9e350cb1c3ca1b67c7a2f2cf3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abccd32db65f57546d929d1fb6f689168"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#abccd32db65f57546d929d1fb6f689168">enableFollowingCb</a> (std_srvs::SetBool::Request &amp;req, std_srvs::SetBool::Response &amp;res)</td></tr>
 <tr class="separator:abccd32db65f57546d929d1fb6f689168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d69091c919cfdc0542c1ae1e7ecf796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#a2d69091c919cfdc0542c1ae1e7ecf796">follow</a> ()</td></tr>
@@ -63,6 +65,10 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a63faa12222a08eab8c0b1b5ba3dfd688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ObjectFollowerCore_8hpp.html#a1cb1f050ea9a254816ced6235c6fdda6">DynamicCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#a63faa12222a08eab8c0b1b5ba3dfd688">config_callback_</a></td></tr>
+<tr class="separator:a63faa12222a08eab8c0b1b5ba3dfd688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af917e5761c3a3fe21eddc9810da800c5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="ObjectFollowerCore_8hpp.html#a810433170d56b0109803f7932584be26">DynamicServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#af917e5761c3a3fe21eddc9810da800c5">config_server_</a></td></tr>
+<tr class="separator:af917e5761c3a3fe21eddc9810da800c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd9b90c9b292ee63eac36b5f8d0d556"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#a1fd9b90c9b292ee63eac36b5f8d0d556">following_enabled_</a> = true</td></tr>
 <tr class="separator:a1fd9b90c9b292ee63eac36b5f8d0d556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14358c447701187bf01ed23fdc4e60b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classGoalChecker.html">GoalChecker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html#ad14358c447701187bf01ed23fdc4e60b">goal_checker_</a></td></tr>
@@ -79,9 +85,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a45fc890eefbe8a4bfff96d9c97f93ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents way for publishing goal. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them and following to object. </p>
+<div class="textblock"><p>Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents publishing goal algorithm. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them in following algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00017">17</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00023">23</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a459c6d1db8f8b1c10e004f6f380c2f7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a459c6d1db8f8b1c10e004f6f380c2f7d">&#9670;&nbsp;</a></span>ObjectFollowerCore() <span class="overload">[1/3]</span></h2>
@@ -198,13 +204,52 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classObjectFollowerCore_a1e6a936eb8e5b19a3f573aa0686957fc_cgraph.png" border="0" usemap="#classObjectFollowerCore_a1e6a936eb8e5b19a3f573aa0686957fc_cgraph" alt=""/></div>
 <map name="classObjectFollowerCore_a1e6a936eb8e5b19a3f573aa0686957fc_cgraph" id="classObjectFollowerCore_a1e6a936eb8e5b19a3f573aa0686957fc_cgraph">
 <area shape="rect" id="node2" href="classObjectFollowerCore.html#abccd32db65f57546d929d1fb6f689168" title="ObjectFollowerCore\l::enableFollowingCb" alt="" coords="199,5,339,47"/>
-<area shape="rect" id="node3" href="classObjectFollowerCore.html#a62e5603c4b8124e522756640959cd1b7" title="ObjectFollowerCore\l::setParams" alt="" coords="200,71,337,112"/>
+<area shape="rect" id="node3" href="classObjectFollowerCore.html#a53fde9e350cb1c3ca1b67c7a2f2cf3e2" title="ObjectFollowerCore\l::dynamicConfigCb" alt="" coords="200,71,337,112"/>
+<area shape="rect" id="node4" href="classObjectFollowerCore.html#a62e5603c4b8124e522756640959cd1b7" title="ObjectFollowerCore\l::setParams" alt="" coords="200,136,337,177"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a53fde9e350cb1c3ca1b67c7a2f2cf3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53fde9e350cb1c3ca1b67c7a2f2cf3e2">&#9670;&nbsp;</a></span>dynamicConfigCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectFollowerCore::dynamicConfigCb </td>
+          <td>(</td>
+          <td class="paramtype">object_follower::FollowerParamsConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00057">57</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+
+</div>
+</div>
 <a id="abccd32db65f57546d929d1fb6f689168"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abccd32db65f57546d929d1fb6f689168">&#9670;&nbsp;</a></span>enableFollowingCb()</h2>
 
@@ -239,7 +284,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00053">53</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00066">66</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +311,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00072">72</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00085">85</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +338,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00037">37</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00043">43</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +365,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00061">61</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00074">74</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +392,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00051">51</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00064">64</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +411,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00024">24</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8cpp_source.html#l00030">30</a> of file <a class="el" href="ObjectFollowerCore_8cpp_source.html">ObjectFollowerCore.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -381,6 +426,54 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a63faa12222a08eab8c0b1b5ba3dfd688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63faa12222a08eab8c0b1b5ba3dfd688">&#9670;&nbsp;</a></span>config_callback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ObjectFollowerCore_8hpp.html#a1cb1f050ea9a254816ced6235c6fdda6">DynamicCallback</a> ObjectFollowerCore::config_callback_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00053">53</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af917e5761c3a3fe21eddc9810da800c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af917e5761c3a3fe21eddc9810da800c5">&#9670;&nbsp;</a></span>config_server_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="ObjectFollowerCore_8hpp.html#a810433170d56b0109803f7932584be26">DynamicServer</a>&gt; ObjectFollowerCore::config_server_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00052">52</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a1fd9b90c9b292ee63eac36b5f8d0d556"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fd9b90c9b292ee63eac36b5f8d0d556">&#9670;&nbsp;</a></span>following_enabled_</h2>
 
@@ -401,7 +494,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00041">41</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00049">49</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +518,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00044">44</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00055">55</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +542,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00045">45</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00056">56</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +566,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00046">46</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00057">57</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +590,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00038">38</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00046">46</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +614,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00039">39</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00047">47</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +638,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00042">42</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00050">50</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
 
 </div>
 </div>
@@ -559,7 +652,7 @@ Here is the call graph for this function:</div>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/object_follower">object_follower</a><br />
 Author(s): </br />
-<small>autogenerated on Fri Dec 11 2020 15:56:52</small>
+<small>autogenerated on Mon Dec 14 2020 10:56:06</small>
 </div>
 </body>
 </html>

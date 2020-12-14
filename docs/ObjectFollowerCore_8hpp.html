@@ -21,7 +21,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">ObjectFollowerCore.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -31,10 +32,14 @@ $(function() {
 <code>#include &lt;ros/ros.h&gt;</code><br />
 <code>#include &lt;ros/service_server.h&gt;</code><br />
 <code>#include &lt;std_srvs/SetBool.h&gt;</code><br />
+<code>#include &quot;object_follower/FollowerParamsConfig.h&quot;</code><br />
+<code>#include &lt;dynamic_reconfigure/server.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ObjectFollowerCore.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="ObjectFollowerCore_8hpp__incl.png" border="0" usemap="#ObjectFollowerCore_8hpp" alt=""/></div>
+<map name="ObjectFollowerCore_8hpp" id="ObjectFollowerCore_8hpp">
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -53,16 +58,56 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents way for publishing goal. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them and following to object.  <a href="classObjectFollowerCore.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class unites <a class="el" href="classGoalPublisher.html" title="Abstract class represents publishing goal algorithm. ">GoalPublisher</a> <a class="el" href="classGoalChecker.html" title="Class that keeps current position state and checks if goal is considirable. ">GoalChecker</a> and <a class="el" href="classGoalGenerator.html" title="Abstract class represents algorithm for evaluating goal. ">GoalGenerator</a> components and provides functional for combined work of them in following algorithm.  <a href="classObjectFollowerCore.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a1cb1f050ea9a254816ced6235c6fdda6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ObjectFollowerCore_8hpp.html#a1cb1f050ea9a254816ced6235c6fdda6">DynamicCallback</a> = dynamic_reconfigure::Server&lt; object_follower::FollowerParamsConfig &gt;::CallbackType</td></tr>
+<tr class="separator:a1cb1f050ea9a254816ced6235c6fdda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810433170d56b0109803f7932584be26"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ObjectFollowerCore_8hpp.html#a810433170d56b0109803f7932584be26">DynamicServer</a> = dynamic_reconfigure::Server&lt; object_follower::FollowerParamsConfig &gt;</td></tr>
+<tr class="separator:a810433170d56b0109803f7932584be26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1cb1f050ea9a254816ced6235c6fdda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb1f050ea9a254816ced6235c6fdda6">&#9670;&nbsp;</a></span>DynamicCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="ObjectFollowerCore_8hpp.html#a1cb1f050ea9a254816ced6235c6fdda6">DynamicCallback</a> =  dynamic_reconfigure::Server&lt;object_follower::FollowerParamsConfig&gt;::CallbackType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00018">18</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a810433170d56b0109803f7932584be26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810433170d56b0109803f7932584be26">&#9670;&nbsp;</a></span>DynamicServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="ObjectFollowerCore_8hpp.html#a810433170d56b0109803f7932584be26">DynamicServer</a> =  dynamic_reconfigure::Server&lt;object_follower::FollowerParamsConfig&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerCore_8hpp_source.html#l00016">16</a> of file <a class="el" href="ObjectFollowerCore_8hpp_source.html">ObjectFollowerCore.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 
 <br clear="all" />
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/object_follower">object_follower</a><br />
 Author(s): </br />
-<small>autogenerated on Fri Dec 11 2020 15:56:52</small>
+<small>autogenerated on Mon Dec 14 2020 10:56:06</small>
 </div>
 </body>
 </html>

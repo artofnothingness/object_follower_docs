@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGoalPublisher.html" title="Abstract class represents way for publishing goal. " alt="" coords="5,31,108,57"/>
-<area shape="rect" id="node2" href="$classGoalPublisherMoveBase.html" title="Implementation of publisher being able for sending goals to move_base. " alt="" coords="156,5,321,32"/>
-<area shape="rect" id="node3" href="$classGoalPublisherTf.html" title="Implementation of publisher being able for sending goal tf;. " alt="" coords="181,56,296,83"/>
+<area shape="rect" id="node1" href="$classGoalPublisher.html" title="Abstract class represents publishing goal algorithm. " alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$classGoalPublisherMoveBase.html" title="Implementation of publisher being able of sending goals to move_base. " alt="" coords="156,5,321,32"/>
+<area shape="rect" id="node3" href="$classGoalPublisherTf.html" title="Implementation of publisher being able of sending goal tf;. " alt="" coords="181,56,296,83"/>
 </map>

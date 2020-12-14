@@ -1,4 +1,4 @@
 <map id="GoalPublisher" name="GoalPublisher">
-<area shape="rect" id="node2" href="$classGoalPublisherMoveBase.html" title="Implementation of publisher being able for sending goals to move_base. " alt="" coords="5,80,171,107"/>
-<area shape="rect" id="node3" href="$classGoalPublisherTf.html" title="Implementation of publisher being able for sending goal tf;. " alt="" coords="195,80,309,107"/>
+<area shape="rect" id="node2" href="$classGoalPublisherMoveBase.html" title="Implementation of publisher being able of sending goals to move_base. " alt="" coords="5,80,171,107"/>
+<area shape="rect" id="node3" href="$classGoalPublisherTf.html" title="Implementation of publisher being able of sending goal tf;. " alt="" coords="195,80,309,107"/>
 </map>

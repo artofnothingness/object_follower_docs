@@ -1,4 +1,5 @@
 <map id="ObjectFollowerCore::ObjectFollowerCore" name="ObjectFollowerCore::ObjectFollowerCore">
 <area shape="rect" id="node2" href="$classObjectFollowerCore.html#abccd32db65f57546d929d1fb6f689168" title="ObjectFollowerCore\l::enableFollowingCb" alt="" coords="199,5,339,47"/>
-<area shape="rect" id="node3" href="$classObjectFollowerCore.html#a62e5603c4b8124e522756640959cd1b7" title="ObjectFollowerCore\l::setParams" alt="" coords="200,71,337,112"/>
+<area shape="rect" id="node3" href="$classObjectFollowerCore.html#a53fde9e350cb1c3ca1b67c7a2f2cf3e2" title="ObjectFollowerCore\l::dynamicConfigCb" alt="" coords="200,71,337,112"/>
+<area shape="rect" id="node4" href="$classObjectFollowerCore.html#a62e5603c4b8124e522756640959cd1b7" title="ObjectFollowerCore\l::setParams" alt="" coords="200,136,337,177"/>
 </map>
