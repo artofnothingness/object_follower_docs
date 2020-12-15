@@ -1,7 +1,8 @@
 <map id="GoalPublisher.hpp" name="GoalPublisher.hpp">
 <area shape="rect" id="node2" href="$GoalPublisherMoveBase_8hpp.html" title="GoalPublisherMoveBase.hpp" alt="" coords="117,80,308,107"/>
 <area shape="rect" id="node7" href="$GoalPublisherTf_8hpp.html" title="GoalPublisherTf.hpp" alt="" coords="332,80,472,107"/>
-<area shape="rect" id="node9" href="$ObjectFollowerCore_8cpp.html" title="ObjectFollowerCore.cpp" alt="" coords="497,80,659,107"/>
+<area shape="rect" id="node9" href="$GoalPublisher_8cpp.html" title="GoalPublisher.cpp" alt="" coords="497,80,625,107"/>
+<area shape="rect" id="node10" href="$ObjectFollowerCore_8cpp.html" title="ObjectFollowerCore.cpp" alt="" coords="649,80,811,107"/>
 <area shape="rect" id="node3" href="$ObjectFollowerFactory_8hpp.html" title="ObjectFollowerFactory.hpp" alt="" coords="221,155,399,181"/>
 <area shape="rect" id="node6" href="$GoalPublisherMoveBase_8cpp.html" title="GoalPublisherMoveBase.cpp" alt="" coords="5,155,196,181"/>
 <area shape="rect" id="node4" href="$ObjectFollowerFactory_8cpp.html" title="ObjectFollowerFactory.cpp" alt="" coords="123,229,302,256"/>

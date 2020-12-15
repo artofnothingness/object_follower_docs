@@ -40,7 +40,7 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a1bffbf5b79364c9beafbe451326e03ba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtfPublisher.html#a1bffbf5b79364c9beafbe451326e03ba">angle_increment_</a></td></tr>
 <tr class="separator:a1bffbf5b79364c9beafbe451326e03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad944292996c1cb65560a16c6a7d26231"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtfPublisher.html#ad944292996c1cb65560a16c6a7d26231">base_frame_</a> = &quot;base_link&quot;</td></tr>
+<tr class="memitem:ad944292996c1cb65560a16c6a7d26231"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtfPublisher.html#ad944292996c1cb65560a16c6a7d26231">base_frame_</a> = &quot;map&quot;</td></tr>
 <tr class="separator:ad944292996c1cb65560a16c6a7d26231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8794cf281d415cbca113a6e1e47999a7"><td class="memItemLeft" align="right" valign="top">tf2::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtfPublisher.html#a8794cf281d415cbca113a6e1e47999a7">current_position_</a> = {0, 0.3, 0}</td></tr>
 <tr class="separator:a8794cf281d415cbca113a6e1e47999a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,15 +130,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tf__publisher__node_8cpp_source.html#l00015">15</a> of file <a class="el" href="tf__publisher__node_8cpp_source.html">tf_publisher_node.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classtfPublisher_ac372c296db4e60ac4f2c702d5f407263_cgraph.png" border="0" usemap="#classtfPublisher_ac372c296db4e60ac4f2c702d5f407263_cgraph" alt=""/></div>
-<map name="classtfPublisher_ac372c296db4e60ac4f2c702d5f407263_cgraph" id="classtfPublisher_ac372c296db4e60ac4f2c702d5f407263_cgraph">
-<area shape="rect" id="node2" href="classtfPublisher.html#aabfb3bf75649b64aa34be2368da3321b" title="tfPublisher::setAngleConstraints" alt="" coords="210,5,421,32"/>
-<area shape="rect" id="node3" href="classtfPublisher.html#aa8ba47b0b666286cedea80ae700b7e82" title="tfPublisher::setRangeConstraints" alt="" coords="208,56,423,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -167,14 +158,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tf__publisher__node_8cpp_source.html#l00030">30</a> of file <a class="el" href="tf__publisher__node_8cpp_source.html">tf_publisher_node.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classtfPublisher_a2b1f7a2a1a501bf808f562a4b10d30eb_cgraph.png" border="0" usemap="#classtfPublisher_a2b1f7a2a1a501bf808f562a4b10d30eb_cgraph" alt=""/></div>
-<map name="classtfPublisher_a2b1f7a2a1a501bf808f562a4b10d30eb_cgraph" id="classtfPublisher_a2b1f7a2a1a501bf808f562a4b10d30eb_cgraph">
-<area shape="rect" id="node2" href="classtfPublisher.html#a1177c164284b1daaf1aa53cdaba7be6d" title="tfPublisher::iterateBroadcating" alt="" coords="203,5,400,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -316,15 +299,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="tf__publisher__node_8cpp_source.html#l00023">23</a> of file <a class="el" href="tf__publisher__node_8cpp_source.html">tf_publisher_node.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classtfPublisher_ab863035ef46152b04a69742296b9bb39_cgraph.png" border="0" usemap="#classtfPublisher_ab863035ef46152b04a69742296b9bb39_cgraph" alt=""/></div>
-<map name="classtfPublisher_ab863035ef46152b04a69742296b9bb39_cgraph" id="classtfPublisher_ab863035ef46152b04a69742296b9bb39_cgraph">
-<area shape="rect" id="node2" href="classtfPublisher.html#a2b1f7a2a1a501bf808f562a4b10d30eb" title="tfPublisher::broadcast" alt="" coords="172,5,321,32"/>
-<area shape="rect" id="node3" href="classtfPublisher.html#a1177c164284b1daaf1aa53cdaba7be6d" title="tfPublisher::iterateBroadcating" alt="" coords="369,5,567,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -363,7 +337,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string tfPublisher::base_frame_ = &quot;base_link&quot;</td>
+          <td class="memname">std::string tfPublisher::base_frame_ = &quot;map&quot;</td>
         </tr>
       </table>
   </td>
@@ -674,7 +648,7 @@ Here is the call graph for this function:</div>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/object_follower">object_follower</a><br />
 Author(s): </br />
-<small>autogenerated on Mon Dec 14 2020 10:56:06</small>
+<small>autogenerated on Tue Dec 15 2020 15:33:07</small>
 </div>
 </body>
 </html>

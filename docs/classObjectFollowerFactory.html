@@ -35,8 +35,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60450cfceb7a547a5fdccef1c22c90bb"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a60450cfceb7a547a5fdccef1c22c90bb">makeFollower</a> ()</td></tr>
-<tr class="separator:a60450cfceb7a547a5fdccef1c22c90bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ffdeeb3e95e9a4d62c2b3c96e109a3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a74ffdeeb3e95e9a4d62c2b3c96e109a3">makeFollower</a> ()</td></tr>
+<tr class="separator:a74ffdeeb3e95e9a4d62c2b3c96e109a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073aab69e35d338af00ac90eadcf45b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a073aab69e35d338af00ac90eadcf45b0">ObjectFollowerFactory</a> ()</td></tr>
 <tr class="separator:a073aab69e35d338af00ac90eadcf45b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf426773c91a67846ba0689d3c26778a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#abf426773c91a67846ba0689d3c26778a">setParams</a> ()</td></tr>
@@ -46,8 +46,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e5745c985cc30cfde2c902d2571ad7f"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classGoalChecker.html">GoalChecker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a8e5745c985cc30cfde2c902d2571ad7f">makeChecker</a> (std::string_view type)</td></tr>
 <tr class="separator:a8e5745c985cc30cfde2c902d2571ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ab924944774b0c6e74f8ae621557d2"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a48ab924944774b0c6e74f8ae621557d2">makeFollower</a> (std::string_view generator_type, std::string_view publisher_type, std::string_view checker_type)</td></tr>
-<tr class="separator:a48ab924944774b0c6e74f8ae621557d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75503125c71da593ae1608ed4193296"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#ad75503125c71da593ae1608ed4193296">makeFollower</a> (std::string_view generator_type, std::string_view publisher_type, std::string_view checker_type)</td></tr>
+<tr class="separator:ad75503125c71da593ae1608ed4193296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56535855f3bb0b224cea0b12947347ce"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classGoalGenerator.html">GoalGenerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#a56535855f3bb0b224cea0b12947347ce">makeGenerator</a> (std::string_view type)</td></tr>
 <tr class="separator:a56535855f3bb0b224cea0b12947347ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae17258a8ffa9d62ff9a9987b8f83eca"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classGoalPublisher.html">GoalPublisher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectFollowerFactory.html#aae17258a8ffa9d62ff9a9987b8f83eca">makePublisher</a> (std::string_view type)</td></tr>
@@ -132,19 +132,11 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00029">29</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classObjectFollowerFactory_a8e5745c985cc30cfde2c902d2571ad7f_cgraph.png" border="0" usemap="#classObjectFollowerFactory_a8e5745c985cc30cfde2c902d2571ad7f_cgraph" alt=""/></div>
-<map name="classObjectFollowerFactory_a8e5745c985cc30cfde2c902d2571ad7f_cgraph" id="classObjectFollowerFactory_a8e5745c985cc30cfde2c902d2571ad7f_cgraph">
-<area shape="rect" id="node2" href="classObjectFollowerFactory.html#aa6f2a31daa14dec495768f4547ada291" title="ObjectFollowerFactory\l::printChekerMissingMessage" alt="" coords="207,5,401,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a48ab924944774b0c6e74f8ae621557d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48ab924944774b0c6e74f8ae621557d2">&#9670;&nbsp;</a></span>makeFollower() <span class="overload">[1/2]</span></h2>
+<a id="ad75503125c71da593ae1608ed4193296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75503125c71da593ae1608ed4193296">&#9670;&nbsp;</a></span>makeFollower() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +145,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt; ObjectFollowerFactory::makeFollower </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt; ObjectFollowerFactory::makeFollower </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>generator_type</em>, </td>
@@ -184,30 +176,17 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00040">40</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classObjectFollowerFactory_a48ab924944774b0c6e74f8ae621557d2_cgraph.png" border="0" usemap="#classObjectFollowerFactory_a48ab924944774b0c6e74f8ae621557d2_cgraph" alt=""/></div>
-<map name="classObjectFollowerFactory_a48ab924944774b0c6e74f8ae621557d2_cgraph" id="classObjectFollowerFactory_a48ab924944774b0c6e74f8ae621557d2_cgraph">
-<area shape="rect" id="node2" href="classObjectFollowerFactory.html#a56535855f3bb0b224cea0b12947347ce" title="ObjectFollowerFactory\l::makeGenerator" alt="" coords="207,5,360,47"/>
-<area shape="rect" id="node4" href="classObjectFollowerFactory.html#aae17258a8ffa9d62ff9a9987b8f83eca" title="ObjectFollowerFactory\l::makePublisher" alt="" coords="207,71,360,112"/>
-<area shape="rect" id="node6" href="classObjectFollowerFactory.html#a8e5745c985cc30cfde2c902d2571ad7f" title="ObjectFollowerFactory\l::makeChecker" alt="" coords="207,136,360,177"/>
-<area shape="rect" id="node3" href="classObjectFollowerFactory.html#abfc8df839f57d949c615875e2c73e07d" title="ObjectFollowerFactory\l::printGeneratorMissingMessage" alt="" coords="408,5,619,47"/>
-<area shape="rect" id="node5" href="classObjectFollowerFactory.html#a5f9fca4f3aef4a4ea77d7f1451b01404" title="ObjectFollowerFactory\l::printPublisherMissingMessage" alt="" coords="410,71,617,112"/>
-<area shape="rect" id="node7" href="classObjectFollowerFactory.html#aa6f2a31daa14dec495768f4547ada291" title="ObjectFollowerFactory\l::printChekerMissingMessage" alt="" coords="416,136,611,177"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a60450cfceb7a547a5fdccef1c22c90bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60450cfceb7a547a5fdccef1c22c90bb">&#9670;&nbsp;</a></span>makeFollower() <span class="overload">[2/2]</span></h2>
+<a id="a74ffdeeb3e95e9a4d62c2b3c96e109a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ffdeeb3e95e9a4d62c2b3c96e109a3">&#9670;&nbsp;</a></span>makeFollower() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt; ObjectFollowerFactory::makeFollower </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classObjectFollowerCore.html">ObjectFollowerCore</a> &gt; ObjectFollowerFactory::makeFollower </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -215,7 +194,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00056">56</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00054">54</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,14 +223,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00005">5</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classObjectFollowerFactory_a56535855f3bb0b224cea0b12947347ce_cgraph.png" border="0" usemap="#classObjectFollowerFactory_a56535855f3bb0b224cea0b12947347ce_cgraph" alt=""/></div>
-<map name="classObjectFollowerFactory_a56535855f3bb0b224cea0b12947347ce_cgraph" id="classObjectFollowerFactory_a56535855f3bb0b224cea0b12947347ce_cgraph">
-<area shape="rect" id="node2" href="classObjectFollowerFactory.html#abfc8df839f57d949c615875e2c73e07d" title="ObjectFollowerFactory\l::printGeneratorMissingMessage" alt="" coords="207,5,417,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -280,14 +251,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00017">17</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classObjectFollowerFactory_aae17258a8ffa9d62ff9a9987b8f83eca_cgraph.png" border="0" usemap="#classObjectFollowerFactory_aae17258a8ffa9d62ff9a9987b8f83eca_cgraph" alt=""/></div>
-<map name="classObjectFollowerFactory_aae17258a8ffa9d62ff9a9987b8f83eca_cgraph" id="classObjectFollowerFactory_aae17258a8ffa9d62ff9a9987b8f83eca_cgraph">
-<area shape="rect" id="node2" href="classObjectFollowerFactory.html#a5f9fca4f3aef4a4ea77d7f1451b01404" title="ObjectFollowerFactory\l::printPublisherMissingMessage" alt="" coords="207,5,413,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -315,7 +278,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00080">80</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00078">78</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +306,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00060">60</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00058">58</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +334,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00070">70</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00068">68</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -390,7 +353,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00090">90</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ObjectFollowerFactory_8cpp_source.html#l00088">88</a> of file <a class="el" href="ObjectFollowerFactory_8cpp_source.html">ObjectFollowerFactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +536,7 @@ Here is the call graph for this function:</div>
 <hr size="1"><div style="align: right;">
 <a href="http://wiki.ros.org/object_follower">object_follower</a><br />
 Author(s): </br />
-<small>autogenerated on Mon Dec 14 2020 10:56:06</small>
+<small>autogenerated on Tue Dec 15 2020 15:33:07</small>
 </div>
 </body>
 </html>
